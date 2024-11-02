@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'AbigailNagita';
+  src: url('/Proyecto/Fuentes/Abigailnagita\ Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'AbigailNagita', Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding-top: 135px;
+  color: #333;
+}
+
+.navbar .nav-link {
+  color: aliceblue !important;
+  font-size: 1.25rem;
+  font-family: 'AbigailNagita', Arial, sans-serif;
+}
+
+.navbar .nav-link:hover {
+  color: #8C8303 !important;
+}
+.navbar-height{
+  height: 8.5rem;
+}
+.carousel-container {
+  max-width: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-custom {
+  width: 100%;
+  max-width: 300px;
+  border: 5px solid #8C8303;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 10px;
+  background-color: white;
+}
+
+.card-img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-bodys {
+  padding: 15px;
+  text-align: center;
+  background-color:  #F2ACAC;
+  font-family: 'AbigailNagita', Arial, sans-serif;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 470px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar-height {
+    height: auto;
+  }
+
+  .card-custom {
+    max-width: 100%;
+  }
+
+  .image-container {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.div-3d {
+  width: 30rem;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  background-color: transparent;
+  border: 0.2rem solid #F29C94;
+  border-radius: 3rem;
+  box-shadow: 1rem 1rem 2rem #F2C2C2, 
+              -1rem -1rem 2rem rgba(255, 255, 255, 0.8);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'AbigailNagita', sans-serif;
+  color: #F29C94;
+  transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
+}
+
+.div-3d:hover{
+  background-color: #D99696;
+  border-color: #8C8303;
+  color: white;
+  box-shadow: 1rem 1rem 2rem #F2ACAC, -1rem -1rem 2rem rgba(255, 200, 200, 0.8);
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: bg-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  border-radius: 40%;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* facebook*/
+.containerTwo:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: #ccc;
+  padding: 30px 0;
+  font-size: 0.9rem;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  color: #f4f4f4;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #8C8303;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-link img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover img {
+  transform: scale(1.2);
+}
+
+/* Footer Responsivo */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+
+
+ 
